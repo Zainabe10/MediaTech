@@ -5,13 +5,7 @@ namespace WinFormsmedia_tech
         public Form1()
         {
             InitializeComponent();
-            PictureBox pb = new PictureBox();
-            pb.Image = Image.FromFile("Ressources/logo.png");
-            pb.SizeMode = PictureBoxSizeMode.Zoom;
-            pb.Dock = DockStyle.Top; // Position en haut
-            pb.Height = 150;         // Taille ajustée
 
-            this.Controls.Add(pb);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -31,9 +25,28 @@ namespace WinFormsmedia_tech
             title.AutoSize = true;
             title.Location = new Point(10, 20);
 
-           
+
 
         }
-        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SeConnecter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
