@@ -17,36 +17,50 @@ namespace WinFormsmedia_tech
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Label title = new Label();
-            title.Text = "Media_Tech";
-            title.Font = new Font("Segoe UI", 14, FontStyle.Bold);
-            title.AutoSize = true;
-            title.Location = new Point(10, 20);
-
-
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ImageAccueil1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void SeConnecter(object sender, EventArgs e)
+        private void btn_dvd(object sender, EventArgs e)
         {
 
         }
+
+        private void btn_cd(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_livres(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_tous(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_creer_compte(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_decouverte(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

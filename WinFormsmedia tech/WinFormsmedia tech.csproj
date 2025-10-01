@@ -10,13 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Ressources\logo .png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Ressources\logo .png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Remove="Properties\Ressources\logo .png" />
   </ItemGroup>
 
   <ItemGroup>
