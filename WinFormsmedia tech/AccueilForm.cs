@@ -1,11 +1,27 @@
+using System;
+using System.Data;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
 namespace WinFormsmedia_tech
 {
-    public partial class Form1 : Form
+    public partial class AccueilForm : Form
     {
-        public Form1()
+        private MediaTechRepository repo;
+        public AccueilForm()
         {
             InitializeComponent();
+            repo = new MediaTechRepository();
+        }
 
+        private void AccueilForm_Load(object sender, EventArgs e)
+        {
+            ChargerTousLesContenus();
+        }
+
+        private void ChargerTousLesContenus()
+        {
+            //dataGridViewCatalogue.DataSource = repo.GetAllContenus();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -14,11 +30,6 @@ namespace WinFormsmedia_tech
             headerPanel.Dock = DockStyle.Fill;
             headerPanel.Height = 60;
             headerPanel.BackColor = Color.LightGray;
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -34,7 +45,7 @@ namespace WinFormsmedia_tech
 
         private void btn_dvd(object sender, EventArgs e)
         {
-
+            //ConnectToDatabase();
         }
 
         private void btn_cd(object sender, EventArgs e)
@@ -62,5 +73,14 @@ namespace WinFormsmedia_tech
 
         }
 
+        private void txtRecherche_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewCatalogue_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

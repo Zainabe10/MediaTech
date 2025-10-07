@@ -1,6 +1,7 @@
-﻿namespace WinFormsmedia_tech
+﻿
+namespace WinFormsmedia_tech
 {
-    partial class Form1
+    partial class AccueilForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccueilForm));
             label1 = new Label();
             label2 = new Label();
             btn_decouvrir = new Button();
@@ -42,12 +43,16 @@
             btn_filter3 = new Button();
             btn_filter4 = new Button();
             panel2 = new Panel();
-            button1 = new Button();
+            button2 = new Button();
+            txtRecherche = new TextBox();
+            btn_filter = new Button();
             box_genre = new ComboBox();
             box_trier = new ComboBox();
+            dataGridViewCatalogue = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ImageAccueil1).BeginInit();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCatalogue).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -99,7 +104,8 @@
             // ImageAccueil1
             // 
             ImageAccueil1.ErrorImage = null;
-            ImageAccueil1.ImageLocation = "C:\\Users\\DEBROIZE\\Downloads\\affiche.png";
+            ImageAccueil1.Image = Properties.Resources.affiche__1_;
+            ImageAccueil1.ImageLocation = "";
             ImageAccueil1.InitialImage = Properties.Resources.affiche__1_;
             ImageAccueil1.Location = new Point(1288, 0);
             ImageAccueil1.Name = "ImageAccueil1";
@@ -189,7 +195,9 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(234, 192, 88);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(txtRecherche);
+            panel2.Controls.Add(btn_filter);
             panel2.Controls.Add(box_genre);
             panel2.Controls.Add(box_trier);
             panel2.Location = new Point(329, 915);
@@ -197,15 +205,33 @@
             panel2.Size = new Size(1967, 105);
             panel2.TabIndex = 10;
             // 
-            // button1
+            // button2
             // 
-            button1.Font = new Font("DM Sans 14pt ExtraBold", 14.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Location = new Point(543, 37);
-            button1.Name = "button1";
-            button1.Size = new Size(182, 34);
-            button1.TabIndex = 11;
-            button1.Text = "Plus de Filtres";
-            button1.UseVisualStyleBackColor = true;
+            button2.Font = new Font("DM Sans 14pt Black", 14.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(1500, 38);
+            button2.Name = "button2";
+            button2.Size = new Size(182, 34);
+            button2.TabIndex = 13;
+            button2.Text = "Rechercher";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // txtRecherche
+            // 
+            txtRecherche.Location = new Point(781, 45);
+            txtRecherche.Name = "txtRecherche";
+            txtRecherche.Size = new Size(610, 23);
+            txtRecherche.TabIndex = 12;
+            txtRecherche.TextChanged += txtRecherche_TextChanged;
+            // 
+            // btn_filter
+            // 
+            btn_filter.Font = new Font("DM Sans 14pt ExtraBold", 14.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btn_filter.Location = new Point(543, 37);
+            btn_filter.Name = "btn_filter";
+            btn_filter.Size = new Size(182, 34);
+            btn_filter.TabIndex = 11;
+            btn_filter.Text = "Plus de Filtres";
+            btn_filter.UseVisualStyleBackColor = true;
             // 
             // box_genre
             // 
@@ -227,11 +253,21 @@
             box_trier.TabIndex = 0;
             box_trier.Text = "Trier Par...";
             // 
-            // Form1
+            // dataGridViewCatalogue
+            // 
+            dataGridViewCatalogue.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCatalogue.Location = new Point(862, 992);
+            dataGridViewCatalogue.Name = "dataGridViewCatalogue";
+            dataGridViewCatalogue.Size = new Size(240, 150);
+            dataGridViewCatalogue.TabIndex = 11;
+            dataGridViewCatalogue.CellContentClick += dataGridViewCatalogue_CellContentClick;
+            // 
+            // AccueilForm
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2547, 1159);
+            Controls.Add(dataGridViewCatalogue);
             Controls.Add(panel2);
             Controls.Add(btn_filter4);
             Controls.Add(btn_filter3);
@@ -244,12 +280,14 @@
             Controls.Add(panel1);
             Font = new Font("DM Sans 14pt", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
+            Name = "AccueilForm";
             Text = "Média_Tech";
-            Load += Form1_Load;
+            Load += AccueilForm_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ImageAccueil1).EndInit();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCatalogue).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -271,6 +309,9 @@
         private Panel panel2;
         private ComboBox box_genre;
         private ComboBox box_trier;
-        private Button button1;
+        private Button btn_filter;
+        private TextBox txtRecherche;
+        private Button button2;
+        private DataGridView dataGridViewCatalogue;
     }
 }
