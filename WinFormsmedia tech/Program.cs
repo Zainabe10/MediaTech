@@ -1,3 +1,5 @@
+
+
 namespace WinFormsmedia_tech
 {
     internal static class Program
@@ -12,6 +14,9 @@ namespace WinFormsmedia_tech
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new AccueilForm());
+
         }
     }
 }
+  
+           
