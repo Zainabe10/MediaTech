@@ -18,6 +18,7 @@ namespace WinFormsmedia_tech
             InitializeComponent();
 
 
+
         }
         private void btnLogo_Click(object sender, EventArgs e)
         {
@@ -41,9 +42,10 @@ namespace WinFormsmedia_tech
                     accueilForm.Show();
                 }
             }
-         
+
         }
-        private void btnSearch_Click(object sender, EventArgs e) {
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
             string recherche = textBox1.Text;
 
             if (string.IsNullOrWhiteSpace(recherche))
@@ -76,12 +78,11 @@ namespace WinFormsmedia_tech
 
         private void btnSeConnecter_Click(object sender, EventArgs e)
         {
-           
-              
-           
+
         }
         private void btnAccueil_Click(object sender, EventArgs e)
         {
+
 
         }
         private void btnCatalogue_Click(object sender, EventArgs e)
@@ -91,18 +92,19 @@ namespace WinFormsmedia_tech
         private void btnApropos_Click(object sender, EventArgs e)
         {
 
+
         }
         private void panel1_Paint_2(object sender, PaintEventArgs e)
         {
-           
+
 
 
         }
 
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }
     

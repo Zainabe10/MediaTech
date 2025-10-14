@@ -59,11 +59,12 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(465, 18);
+            textBox1.Location = new Point(477, 18);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(965, 23);
             textBox1.TabIndex = 5;
             textBox1.Click += btnSearch_Click;
+            textBox1.TextChanged += textBox1_TextChanged_1;
             textBox1.KeyDown += textBox1_KeyDown;
             // 
             // Se_Connecter
