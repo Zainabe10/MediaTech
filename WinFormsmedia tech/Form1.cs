@@ -6,6 +6,9 @@ namespace WinFormsmedia_tech
         {
             InitializeComponent();
 
+             ConnexionForm connexionForm = new ConnexionForm();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

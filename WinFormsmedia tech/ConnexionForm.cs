@@ -15,6 +15,8 @@ namespace WinFormsmedia_tech
         public ConnexionForm()
         {
             InitializeComponent();
+
+             
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,6 +30,11 @@ namespace WinFormsmedia_tech
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
