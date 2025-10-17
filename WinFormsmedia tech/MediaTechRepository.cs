@@ -10,7 +10,7 @@ namespace WinFormsmedia_tech
 {
     internal class MediaTechRepository
     {
-        private readonly string connectionString = "Data Source=localhost;Initial Catalog=MediaTech;Integrated Security=True;TrustServerCertificate=True;";
+        private readonly string connectionString = @"Server=172.16.119.33\SQLEXPRESS,1433;Database=MediaTech;User Id=Thomas;Password=chpuk;Encrypt=False;";
 
         // Récupérer tous les contenus avec leurs catégories
         public DataTable GetAllContenus()

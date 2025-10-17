@@ -92,6 +92,7 @@ namespace WinFormsmedia_tech
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.SkyBlue;
             panel1.Controls.Add(ImageAccueil1);
             panel1.Controls.Add(btn_compte);
@@ -128,6 +129,7 @@ namespace WinFormsmedia_tech
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
             label3.Font = new Font("DM Sans 14pt SemiBold", 50.2499924F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.Location = new Point(1045, 622);
@@ -138,6 +140,7 @@ namespace WinFormsmedia_tech
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Top;
             label4.Font = new Font("DM Sans 14pt", 20F, FontStyle.Italic);
             label4.Location = new Point(832, 711);
             label4.Name = "label4";
@@ -148,6 +151,7 @@ namespace WinFormsmedia_tech
             // 
             // btn_filter1
             // 
+            btn_filter1.Anchor = AnchorStyles.Top;
             btn_filter1.BackColor = SystemColors.ActiveCaptionText;
             btn_filter1.Font = new Font("DM Sans 14pt Medium", 15F, FontStyle.Bold | FontStyle.Italic);
             btn_filter1.ForeColor = SystemColors.ButtonHighlight;
@@ -161,6 +165,7 @@ namespace WinFormsmedia_tech
             // 
             // btn_filter2
             // 
+            btn_filter2.Anchor = AnchorStyles.Top;
             btn_filter2.Font = new Font("DM Sans 14pt Medium", 14.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btn_filter2.Location = new Point(1055, 817);
             btn_filter2.Name = "btn_filter2";
@@ -172,6 +177,7 @@ namespace WinFormsmedia_tech
             // 
             // btn_filter3
             // 
+            btn_filter3.Anchor = AnchorStyles.Top;
             btn_filter3.Font = new Font("DM Sans 14pt Medium", 14.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btn_filter3.Location = new Point(1243, 817);
             btn_filter3.Name = "btn_filter3";
@@ -183,6 +189,7 @@ namespace WinFormsmedia_tech
             // 
             // btn_filter4
             // 
+            btn_filter4.Anchor = AnchorStyles.Top;
             btn_filter4.Font = new Font("DM Sans 14pt Medium", 14.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btn_filter4.Location = new Point(1431, 817);
             btn_filter4.Name = "btn_filter4";
@@ -194,6 +201,7 @@ namespace WinFormsmedia_tech
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top;
             panel2.BackColor = Color.FromArgb(234, 192, 88);
             panel2.Controls.Add(button2);
             panel2.Controls.Add(txtRecherche);
@@ -207,6 +215,7 @@ namespace WinFormsmedia_tech
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Top;
             button2.Font = new Font("DM Sans 14pt Black", 14.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(1500, 38);
             button2.Name = "button2";
@@ -217,6 +226,7 @@ namespace WinFormsmedia_tech
             // 
             // txtRecherche
             // 
+            txtRecherche.Anchor = AnchorStyles.Top;
             txtRecherche.Location = new Point(781, 45);
             txtRecherche.Name = "txtRecherche";
             txtRecherche.Size = new Size(610, 23);
@@ -225,6 +235,7 @@ namespace WinFormsmedia_tech
             // 
             // btn_filter
             // 
+            btn_filter.Anchor = AnchorStyles.Top;
             btn_filter.Font = new Font("DM Sans 14pt ExtraBold", 14.9999981F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             btn_filter.Location = new Point(543, 37);
             btn_filter.Name = "btn_filter";
@@ -235,6 +246,7 @@ namespace WinFormsmedia_tech
             // 
             // box_genre
             // 
+            box_genre.Anchor = AnchorStyles.Top;
             box_genre.Font = new Font("DM Sans 14pt Light", 14.9999981F, FontStyle.Italic, GraphicsUnit.Point, 0);
             box_genre.FormattingEnabled = true;
             box_genre.Location = new Point(319, 37);
@@ -245,6 +257,7 @@ namespace WinFormsmedia_tech
             // 
             // box_trier
             // 
+            box_trier.Anchor = AnchorStyles.Top;
             box_trier.Font = new Font("DM Sans 14pt Light", 14.9999981F, FontStyle.Italic, GraphicsUnit.Point, 0);
             box_trier.FormattingEnabled = true;
             box_trier.Location = new Point(97, 38);
@@ -255,8 +268,9 @@ namespace WinFormsmedia_tech
             // 
             // dataGridViewCatalogue
             // 
+            dataGridViewCatalogue.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridViewCatalogue.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCatalogue.Location = new Point(862, 992);
+            dataGridViewCatalogue.Location = new Point(332, 1026);
             dataGridViewCatalogue.Name = "dataGridViewCatalogue";
             dataGridViewCatalogue.Size = new Size(240, 150);
             dataGridViewCatalogue.TabIndex = 11;
